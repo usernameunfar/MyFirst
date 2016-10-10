@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/iv_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rel_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_favorite_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nofavorite" />
+
+        <TextView
+            android:id="@+id/tv_favorite_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_favorite_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="现在就去收藏吧"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</FrameLayout>
